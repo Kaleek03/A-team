@@ -52,6 +52,7 @@ body {
 
 }
 
+
 .Toppage-subtext {
     font-size: 18px;
     color: #e5e7eb;
@@ -60,6 +61,12 @@ body {
     vertical-align: top;
     margin-left: 100px;
     margin-top: 0px;
+}
+
+@media screen and (max-width:499px) {
+    .Hero-statement, .Toppage-subtext {
+        margin-left: 20px;
+    }  
 }
 
 .button1 {
@@ -71,6 +78,8 @@ body {
     width: 75px;  
    
 }
+
+
 
 .blankTop-imgContainer {
     display: flex;
@@ -92,11 +101,12 @@ body {
 
 
 .top-mid {
+    position: relative;
     text-align: center;
     font-weight: bold;
     font-size: 36px;
-    margin-bottom: 50px;
-      
+    margin-bottom: 0px;
+    bottom: 70px;
 }
 
 .mid {
@@ -118,8 +128,14 @@ body {
     border: 3px solid #3882f6;
     border-radius: 25px;
     margin-bottom: 5px;
-
 }
+
+@media screen and (max-width: 352px) {
+    .blank-box {
+        height:152px;
+        width: 152px;
+    }  
+ }
 
 
 .quote {
@@ -209,4 +225,14 @@ padding-bottom: 37px;
     border-radius: 5px;
     margin: auto;
     margin-top: 60px;
+}
+
+@media screen and ( max-width: 517px){
+  .button2{
+    
+    max-width:80px;
+  }
+  .cap {
+    font-size: 15px;
+  }  
 }
