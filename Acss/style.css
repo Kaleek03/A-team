@@ -23,14 +23,59 @@ body {
     
 }
 
+.phone {
+    position: relative;
+    left:-5px;
+    bottom:55px;
+    transition: all 500ms;
+}
+.phone:hover {
+    transform: scale(1.2);
+}
+
+.mail {
+    position: relative;
+    left:48px;
+    bottom:55px;
+    transition: all 500ms;
+}
+.mail:hover {
+    transform: scale(1.2);
+}
+
+.facebook {
+    position: relative;
+    left:100px;
+    bottom:55px;
+    transition: all 500ms;
+}
+.facebook:hover {
+    transform: scale(1.2);
+}
+.link {
+    text-decoration: none;
+    color:#e5e7eb;
+    }
+ ul a {
+    transition: all 500ms;
+}
+ul a:hover {
+    font-size: 22px;
+}
+
 .logo {
     position:relative;
     bottom: 53px;
-    left:6px;
+    left:-80px;
     height:40px;
     width:40px;
     border-radius: 200px;
+    transition: all 500ms;
 }
+.logo:hover {
+    transform: scale(1.2);
+}
+
 
 @media screen and (min-width:499px) {
     .Hero-statement {
@@ -76,8 +121,12 @@ body {
     border-radius: 5px;
     height:25px;
     width: 75px;  
-   
+    transition:all 500ms;
 }
+.button1:hover {
+    transform: scale(1.2)
+}
+
 
 
 
@@ -214,10 +263,12 @@ padding-bottom: 37px;
 }
 
 .button2 {
+    position: relative;
+    right:5px;
     flex: 0 0 50%;
     background-color: #3882f6;
     border-color: #e5e7eb;
-    border: 2px solid #e5e7eb;
+    border: 1px solid #e5e7eb;
     font-weight: bold;
     color:#e5e7eb;
     max-width: 100px;
